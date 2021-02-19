@@ -24,7 +24,13 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
+
+Accessibility on the web is ensuring that your website can reach/be accessible to the farthest reaching person.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+
+
 3. How would you explain the concept of a variable to someone new to programming?
 4. What is the purpose of using functions in code?
 
