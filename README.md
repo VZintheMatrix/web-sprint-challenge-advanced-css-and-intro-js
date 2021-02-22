@@ -25,14 +25,22 @@ Please answer the following questions below, you may edit the readme file to inc
 
 1. How would you describe acessibility on the web to someone new to programming?
 
-Accessibility on the web is ensuring that your website can reach/be accessible to the farthest reaching person.
+Accessibility on the web is ensuring that your website can reach/be accessible to the farthest reaching person. thinking about the user who would have nowhere near the capability as the average person. 
 
 2. Talk about 3 different things you can do to ensure your website is accessible. 
 
+using responsive units : using units like rem, %; these units are scalable which allows for better adaptability on different devices and user acces to features like font-size on your page. converting from units like px which are stagnant.
+
+add value to alt in img<> : this allows for user to get a text description of images in case an image doesn't load or a user is applying a screenreader.
+
+adding media queries: this allows you to adapt your window/viewport to different sizes making your website accessible to users on different devices
 
 
 3. How would you explain the concept of a variable to someone new to programming?
+variable allows you to assign value to your data and the ability to then manipulate that data value.
+
 4. What is the purpose of using functions in code?
+the purpose of functions in code is to allow you to repeat a task by storing an action in a block of code. This allows for DRY code.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 

@@ -250,16 +250,22 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 
 
-function get20s(array ,  string){
-  let newArray = [];
+function get20s(array){
+  const live20s = [];
   for(let i = 0; i < array.length; i++){
-   
+    if ((array[i].years) > '1900' && (array[i].years) < '2000'){
+      live20s.push(array[i].name)
     }
-    return newArray.name;
+  }
+  return live20s;
 }
-  
+ console.log(get20s(artists));
 
-console.log(get20s(artists, '190'))
+
+
+
+
+
 
 
 
@@ -272,11 +278,14 @@ console.log(get20s(artists, '190'))
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(array,number){
 
-  artistRemain = array.splice(number)
+function removeArtist(array, i){
+   array.splice([i],1);
+   return array.length;
+  
    /*Your Code Here*/
 }
+
    console.log(removeArtist(artists, 0))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -295,9 +304,17 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(array, id, name, years, genre, nationality, bio){
+array.push({id, name, years, genre, nationality, bio}); 
+  return array;
+  /*Your Code Here*/
   }
+  console.log(addArtist(artists, '20', 'Veezy', '1990 - current day', 'Web Design', 'Jamaican', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu eleifend nisl.' ));
+  
+     
+  
+      /*Your Code Here*/
+
 
   
 
@@ -308,10 +325,17 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
+function lotsOfArt(array){
+  const art100s =[];
+  for(let i = 0; i < array.length; i++){
+    if(array[i].paintings > 100){
+      art100s.push(array[i].name)
+    }
+  }
+  return art100s;
   /*Your Code Here*/
 }
-
+console.log(lotsOfArt(artists));
 
 
 
@@ -337,11 +361,14 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+function getHTML(data){
+  for(i = 0 ; i < data.length; i++){
+    data[i].includes;
+    }
 
     /* Code here */
 
-  }
+}
 
 
 /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪
